@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 16px;
+    background-color: #dde2d0;
+    color:#1c2733;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.maquina {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 18px 12px;
+    background-color: #505052;
+    color: #e8e0cc;
+    border: 4px solid #2430d8;
+    border-radius: 14px;
+    box-shadow: 0 4px 0 #3430ff;
+}
+
+h1 {
+    font: 700 22px "Courier New", monospace;
+    text-align: center;
+    font-size: 22px;
+    margin: 0 0 14px;
+    color: #ffd700;
+}
+
+.dica {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 0 14px;
+}
+
+.janelas {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.janelas input {
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    text-transform: center;
+    font: 700 22px "Courier New" monospace;
+    background-color: oklch(63.479% 0.19674 259.645);
+    color: #191a1b;
+    border: 3px solid#3715f5;
+    border-radius: 6px;
+}
+
+.fileira {
+    display: flex;
+    justify-content: center;
+}
+
+.lampada, .tecla {
+    width: min(8.6vw, 42px);
+    height: min(8.6vw, 42px);
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font: 700 16px "Courier New" monospace;
+}
+
+.lampada {
+    background-color: #15110c;
+    color: #5b5444;
+    border: 2px solid #5b5444;
+    transition: all .15s;
+}
+
+.lampada.acesa {
+    background-color: #f7bb31;
+    color: #232a31;
+    border-color: #ffc94d;
+    box-shadow: 0 0 14px 5px  rgba(255, 201,77, .8);
+}
+
+#teclado { margin-top: 14px; }
+  .tecla { background: #232a31; color: #cfd3c6; border: 2px solid #8a8f86; cursor: pointer; padding: 0; }
+  .tecla:active, .tecla.pressionada { transform: translateY(2px) scale(.93); background: #3a444d; }
+
+  /* Painéis de texto */
+  .rotulo { font-size: 13px; margin: 14px 0 4px; color: #d1ad57; }
+  .linha {
+    min-height: 1.4em; padding: 8px 10px; border-radius: 6px;
+    background: #635f69; color: #ffc94d;
+    font: 16px "Courier New", monospace; letter-spacing: 2px; word-break: break-all;
+  }
+  .acao {
+    display: block; margin: 16px auto 0; padding: 8px 18px; cursor: pointer;
+    font: 700 14px "Courier New", monospace;
+    background: #9a7a2e; color: #fff; border: 0; border-radius: 6px;
+  }
